@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header__logo-img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .header__nav {
+    display: flex;
+    gap: 56px;
+  }
+  
+  .header__nav-item {
+    text-decoration: none;
+    color: var(--primary-background);
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .header__tools {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .header__tool-btn {
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .header__tool-icon {
+    width: 24px;
+    height: 24px;
+  }
+  

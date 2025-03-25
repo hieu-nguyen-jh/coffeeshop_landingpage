@@ -1,0 +1,131 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.intro__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 631px;
+  height: 348px;
+  gap: 24px;
+}
+
+.intro__slogan {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.intro__description {
+  font-family: var(--font-inter);
+  text-indent: 2rem;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  text-align: center;
+}
+
+.intro__button {
+  box-sizing: border-box;
+  width: 363px;
+  height: 82px;
+  gap: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 48px;
+  border: none;
+  border-top-right-radius: 32px;
+  border-bottom-left-radius: 32px;
+  background-color: var(--brandcolor-browncoffee);
+}
+.intro__button-text {
+  color: var(--text-white);
+  font-family: var(--font-playfair-display-sc);
+  font-size: 24px;
+  text-align: center;
+  white-space: nowrap;
+}
+.intro__button-text::first-letter {
+  font-size: 32px;
+}
+
+.intro__button-icon {
+  width: 34px;
+  height: 34px;
+}
+
+.intro__images {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 24px;
+  height: fit-content;
+  gap: 16px;
+}
+.intro__images > img {
+  width: 100%;
+  max-width: 243.2px;
+  height: 348px;
+  object-fit: cover;
+}
+.intro__images img:nth-of-type(odd) {
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+}
+.intro__images img:nth-child(even) {
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+.intro__figures {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  justify-content: space-around;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.05)
+    )
+    1;
+}
+.intro__figure:not(:last-child) {
+  padding-right: 40px;
+  padding-left: 40px;
+  border-right: 1px solid transparent;
+  border-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.05)
+    )
+    1;
+}
+
+.intro__figure .intro__figure-number {
+  font-family: var(--font-inter);
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 120%;
+  letter-spacing: -2%;
+  text-align: center;
+}
+
+.intro__figure .intro__figure-description {
+  font-family: var(--font-playfair-display);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+}

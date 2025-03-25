@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffeeshop Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/intro.css" />
+    <link rel="stylesheet" href="../styles/products.css" />
+    <link rel="stylesheet" href="../styles/aboutus.css" />
+    <link rel="stylesheet" href="../styles/testimonial.css" />
+    <link rel="stylesheet" href="../styles/blog.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header - Start-->
+      <header class="header">
+        <figure class="header__logo">
+          <img
+            class="header__logo-img"
+            src="../assets/logos/header_logo.svg"
+            alt="Logo"
+          />
+        </figure>
+        <nav class="header__nav">
+          <a class="header__nav-item" href="#">Products</a>
+          <a class="header__nav-item" href="#">About us</a>
+          <a class="header__nav-item" href="#">Testimonial</a>
+          <a class="header__nav-item" href="#">Contact</a>
+        </nav>
+        <section class="header__tools">
+          <button class="header__tool-btn header__tool-btn--search">
+            <img
+              class="header__tool-icon"
+              src="../assets/icons/search.svg"
+              alt="Search"
+            />
+          </button>
+          <button class="header__tool-btn header__tool-btn--cart">
+            <img
+              class="header__tool-icon"
+              src="../assets/icons/cart.svg"
+              alt="Cart"
+            />
+          </button>
+        </section>
+      </header>
+      <!-- Header - End -->
+
+      <!-- Intro - Start -->
+      <section class="intro">
+        <div class="intro__info">
+          <h1 class="intro__slogan">
+            Enjoy Your Favorite<br />Coffee with Ngopi
+          </h1>
+          <p class="intro__description">
+            Discover tranquility at Ngopi, a sanctuary for unwinding,<br />
+            where your evenings are perfected with relaxation and rich flavors.
+          </p>
+          <button class="intro__button">
+            <div class="intro__button-text">EXPLORE PRODUCT</div>
+            <img
+              class="intro__button-icon"
+              src="../assets/icons/arrow-right.svg"
+              alt="Arrow"
+            />
+          </button>
+        </div>
+
+        <div class="intro__images">
+          <img
+            class="info__image"
+            src="../assets/images/coffee_intro_1.jpeg"
+            alt="Coffee beans"
+          />
+          <img
+            class="info__image"
+            src="../assets/images/coffee_intro_2.jpeg"
+            alt="Coffee mug"
+          />
+          <img
+            class="info__image"
+            src="../assets/images/coffee_intro_3.jpeg"
+            alt="Coffee pot"
+          />
+          <img
+            class="info__image"
+            src="../assets/images/coffee_intro_4.jpeg"
+            alt="Coffee table"
+          />
+          <img
+            class="info__image"
+            src="../assets/images/coffee_intro_5.jpeg"
+            alt="Coffee cup"
+          />
+        </div>
+
+        <div class="intro__figures">
+          <div class="intro__figure">
+            <div class="intro__figure-number">30+</div>
+            <div class="intro__figure-description">Coffee Variant</div>
+          </div>
+          <div class="intro__figure">
+            <div class="intro__figure-number">20+</div>
+            <div class="intro__figure-description">Meeting Room</div>
+          </div>
+          <div class="intro__figure">
+            <div class="intro__figure-number">25+</div>
+            <div class="intro__figure-description">Event Space</div>
+          </div>
+          <div class="intro__figure">
+            <div class="intro__figure-number">40+</div>
+            <div class="intro__figure-description">Global Achievement</div>
+          </div>
+        </div>
+      </section>
+      <!-- Intro - End -->
+
+      <!-- Products - Start -->
+      <section class="products">
+        <!-- Header Section -->
+        <div class="products__heading">
+          <h2 class="products__heading-title">Our Products</h2>
+          <p class="products__heading-description">
+            From Top Quality Materials
+          </p>
+        </div>
+
+        <div class="products__details">
+          <!-- Menu Navigate -->
+          <div class="products__nav">
+            <button class="products__nav-btn active">Latte</button>
+            <button class="products__nav-btn">Robusta</button>
+            <button class="products__nav-btn">Acabica</button>
+          </div>
+
+          <!-- Product List -->
+          <div class="products__list">
+            <!-- Product Item 1 -->
+            <div class="products__item">
+              <img
+                class="products__item-image"
+                src="../assets/images/coffee_product_1.jpeg"
+                alt="Cappuccino"
+              />
+              <div class="products__item-info">
+                <h3 class="products__item-title">Chocolate Latte</h3>
+                <div class="products__item-rating">
+                  <span class="products__item-star">★</span>
+                  <span class="products__item-average">4.9</span>
+                  <span class="products__item-reviews">(360 reviews)</span>
+                </div>
+                <p class="products__item-description">
+                  Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel
+                  sit dolor fringilla Lorem ipsum dolor sit amet consectetur.
+                  Scelerisque urna vel sit dolor fringilla Lorem ipsum dolor sit
+                  amet consectetur. Scelerisque urna vel sit dolor fringilla
+                </p>
+                <div class="products__item-footer">
+                  <p class="products__item-price">$2.9</p>
+                  <button class="products__item-button">
+                    <div class="products__item-button-text">
+                      <img src="../assets/icons/plus.svg" />
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Item 2 -->
+            <div class="products__item">
+              <img
+                class="products__item-image"
+                src="../assets/images/coffee_product_2.jpeg"
+                alt="Cappuccino"
+              />
+              <div class="products__item-info">
+                <h3 class="products__item-title">Mocha Latte</h3>
+                <div class="products__item-rating">
+                  <span class="products__item-star">★</span>
+                  <span class="products__item-average">4.9</span>
+                  <span class="products__item-reviews">(360 reviews)</span>
+                </div>
+                <p class="products__item-description">
+                  Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel
+                  sit dolor fringilla Lorem ipsum dolor sit amet consectetur.
+                  Scelerisque urna vel sit dolor fringilla Lorem ipsum dolor sit
+                  amet consectetur. Scelerisque urna vel sit dolor fringilla
+                </p>
+                <div class="products__item-footer">
+                  <p class="products__item-price">$2.9</p>
+                  <button class="products__item-button">
+                    <div class="products__item-button-text">
+                      <img src="../assets/icons/plus.svg" />
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Product Item 3 -->
+            <div class="products__item">
+              <img
+                class="products__item-image"
+                src="../assets/images/coffee_product_3.jpeg"
+                alt="Cappuccino"
+              />
+              <div class="products__item-info">
+                <h3 class="products__item-title">Coffee Latte</h3>
+                <div class="products__item-rating">
+                  <span class="products__item-star">★</span>
+                  <span class="products__item-average">4.9</span>
+                  <span class="products__item-reviews">(360 reviews)</span>
+                </div>
+                <p class="products__item-description">
+                  Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel
+                  sit dolor fringilla Lorem ipsum dolor sit amet consectetur.
+                  Scelerisque urna vel sit dolor fringilla Lorem ipsum dolor sit
+                  amet consectetur. Scelerisque urna vel sit dolor fringilla
+                </p>
+                <div class="products__item-footer">
+                  <p class="products__item-price">$2.9</p>
+                  <button class="products__item-button">
+                    <div class="products__item-button-text">
+                      <img src="../assets/icons/plus.svg" />
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Product Item 4 -->
+            <div class="products__item">
+              <img
+                class="products__item-image"
+                src="../assets/images/coffee_product_4.jpeg"
+                alt="Cappuccino"
+              />
+              <div class="products__item-info">
+                <h3 class="products__item-title">Hazelnut Latte</h3>
+                <div class="products__item-rating">
+                  <span class="products__item-star">★</span>
+                  <span class="products__item-average">4.9</span>
+                  <span class="products__item-reviews">(360 reviews)</span>
+                </div>
+                <p class="products__item-description">
+                  Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel
+                  sit dolor fringilla Lorem ipsum dolor sit amet consectetur.
+                  Scelerisque urna vel sit dolor fringilla Lorem ipsum dolor sit
+                  amet consectetur. Scelerisque urna vel sit dolor fringilla
+                </p>
+                <div class="products__item-footer">
+                  <p class="products__item-price">$2.9</p>
+                  <button class="products__item-button">
+                    <div class="products__item-button-text">
+                      <img src="../assets/icons/plus.svg" />
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Dots for Slider -->
+        <div class="products__navdots">
+          <span class="products__navdot-item active"></span>
+          <span class="products__navdot-item"></span>
+          <span class="products__navdot-item"></span>
+          <span class="products__navdot-item"></span>
+        </div>
+      </section>
+      <!-- Products - End -->
+
+      <!-- About Us -  Start -->
+      <section class="aboutus">
+        <!-- Header Section -->
+        <div class="products__heading">
+          <h2 class="products__heading-title">About us</h2>
+          <p class="products__heading-description">Why we are the best</p>
+        </div>
+
+        <!-- About Us Content -->
+        <div class="aboutus__details">
+          <div class="aboutus__column aboutus__content">
+            <p class="aboutus__description">
+              Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit
+              dolor fringilla volutpat lectus amet. Integer sed pretium odio
+              lectus at malesuada sed eget nunc. Viverra malesuada viverra id
+              vel tortor dui adipiscing.
+            </p>
+            <p class="aboutus__description">
+              Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit
+              dolor fringilla volutpat lectus amet. Integer sed pretium odio
+              lectus at malesuada sed eget nunc.
+            </p>
+            <p class="aboutus__description">
+              Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit
+              dolor fringilla volutpat lectus amet.
+            </p>
+            <button class="intro__button">
+              <div class="intro__button-text">READ MORE</div>
+              <img
+                class="intro__button-icon"
+                src="../assets/icons/arrow-right.svg"
+                alt="Arrow"
+              />
+            </button>
+          </div>
+
+          <div class="aboutus__column aboutus__images">
+            <div class="aboutus__image--left">
+              <img
+                class="aboutus__image"
+                src="../assets/images/coffee_about_1.jpeg"
+                alt="Coffee Shop"
+              />
+            </div>
+            <div class="aboutus__image--right">
+              <img
+                class="aboutus__image"
+                src="../assets/images/coffee_about_2.jpeg"
+                alt="Coffee Beans"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Us - End -->
+
+      <!-- Testimonial - Start -->
+      <section class="testimonial">
+        <!-- Header Section -->
+        <div class="products__heading">
+          <h2 class="products__heading-title">Testimonial</h2>
+          <p class="products__heading-description">What our buyers say</p>
+        </div>
+
+        <!-- Testimonials Content -->
+        <div class="testimonial__content">
+          <div class="testimonial__item">
+            <div class="testimonial__item-info">
+              <img
+                class="testimonial__item-image"
+                src="../assets/images/testimonial_1.jpeg"
+                alt="User 1"
+              />
+              <div class="testimonial__item-text">
+                <p class="testimonial__item-name">Michael Wong</p>
+                <div class="testimonial__item-rating">★★★★☆</div>
+              </div>
+            </div>
+            <p class="testimonial__item-description">
+              Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit
+              dolor fringilla volutpat lectus amet. Integer sed pretium odio
+              lectus at malesuada sed eget nunc. Viverra malesuada viverra id
+              vel tortor dui adipiscing.
+            </p>
+          </div>
+
+          <div class="testimonial__item">
+            <div class="testimonial__item-info">
+              <img
+                class="testimonial__item-image"
+                src="../assets/images/testimonial_2.jpeg"
+                alt="User 1"
+              />
+              <div class="testimonial__item-text">
+                <p class="testimonial__item-name">Avril Song</p>
+                <div class="testimonial__item-rating">★★★★☆</div>
+              </div>
+            </div>
+            <p class="testimonial__item-description">
+              Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit
+              dolor fringilla volutpat lectus amet. Integer sed pretium odio
+              lectus at malesuada sed eget nunc. Viverra malesuada viverra id
+              vel tortor dui adipiscing.
+            </p>
+          </div>
+
+          <div class="testimonial__item">
+            <div class="testimonial__item-info">
+              <img
+                class="testimonial__item-image"
+                src="../assets/images/testimonial_3.jpeg"
+                alt="User 1"
+              />
+              <div class="testimonial__item-text">
+                <p class="testimonial__item-name">Jeanne Wood</p>
+                <div class="testimonial__item-rating">★★★★☆</div>
+              </div>
+            </div>
+            <p class="testimonial__item-description">
+              Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit
+              dolor fringilla volutpat lectus amet. Integer sed pretium odio
+              lectus at malesuada sed eget nunc. Viverra malesuada viverra id
+              vel tortor dui adipiscing.
+            </p>
+          </div>
+        </div>
+
+        <div class="products__navdots">
+          <span class="products__navdot-item active"></span>
+          <span class="products__navdot-item"></span>
+          <span class="products__navdot-item"></span>
+          <span class="products__navdot-item"></span>
+        </div>
+      </section>
+      <!-- Testimonial - End -->
+
+      <!-- Blog - Start -->
+      <section class="blog">
+        <!-- Header Section -->
+        <div class="products__heading">
+          <h2 class="products__heading-title">Blog</h2>
+          <p class="products__heading-description">Read our articles</p>
+        </div>
+
+        <!-- Blog Content -->
+        <div class="blog__content">
+          <div class="blog__item">
+            <div class="blog__item-image">
+              <img src="../assets/images/blog_1.jpeg" alt="Blog Post 1" />
+            </div>
+            <div class="blog__item-meta">
+              <div class="blog__item-author">
+                <img
+                  src="../assets/icons/user.svg"
+                  alt="Author"
+                  class="blog__item-icon"
+                />
+                <span>John Doe</span>
+              </div>
+              <div class="blog__item-date">
+                <img
+                  src="../assets/icons/calendar.svg"
+                  alt="Date"
+                  class="blog__item-icon"
+                />
+                <span>Feb 23, 2024</span>
+              </div>
+            </div>
+
+            <p class="blog__item-description">
+              Lorem ipsum dolor sit amet consectetur. Est tempor morbi
+              pellentesque.
+            </p>
+
+            <div class="blog__item-footer">
+              <a class="blog__item-link" href="#">
+                View details
+                <img
+                  src="../assets/icons/caret-right.svg"
+                  alt="Arrow"
+                  class="blog__item-arrow"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="blog__item">
+            <div class="blog__item-image">
+              <img src="../assets/images/blog_2.jpeg" alt="Blog Post 2" />
+            </div>
+            <div class="blog__item-meta">
+              <div class="blog__item-author">
+                <img
+                  src="../assets/icons/user.svg"
+                  alt="Author"
+                  class="blog__item-icon"
+                />
+                <span>John Doe</span>
+              </div>
+              <div class="blog__item-date">
+                <img
+                  src="../assets/icons/calendar.svg"
+                  alt="Date"
+                  class="blog__item-icon"
+                />
+                <span>Feb 23, 2024</span>
+              </div>
+            </div>
+
+            <p class="blog__item-description">
+              Lorem ipsum dolor sit amet consectetur. Est tempor morbi
+              pellentesque.
+            </p>
+
+            <div class="blog__item-footer">
+              <a class="blog__item-link" href="#">
+                View details
+                <img
+                  src="../assets/icons/caret-right.svg"
+                  alt="Arrow"
+                  class="blog__item-arrow"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="blog__item">
+            <div class="blog__item-image">
+              <img src="../assets/images/blog_3.jpeg" alt="Blog Post 1" />
+            </div>
+            <div class="blog__item-meta">
+              <div class="blog__item-author">
+                <img
+                  src="../assets/icons/user.svg"
+                  alt="Author"
+                  class="blog__item-icon"
+                />
+                <span>John Doe</span>
+              </div>
+              <div class="blog__item-date">
+                <img
+                  src="../assets/icons/calendar.svg"
+                  alt="Date"
+                  class="blog__item-icon"
+                />
+                <span>Feb 23, 2024</span>
+              </div>
+            </div>
+
+            <p class="blog__item-description">
+              Lorem ipsum dolor sit amet consectetur. Est tempor morbi
+              pellentesque.
+            </p>
+
+            <div class="blog__item-footer">
+              <a class="blog__item-link" href="#">
+                View details
+                <img
+                  src="../assets/icons/caret-right.svg"
+                  alt="Arrow"
+                  class="blog__item-arrow"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <button class="intro__button center">
+          <div class="intro__button-text">READ MORE</div>
+          <img
+            class="intro__button-icon"
+            src="../assets/icons/arrow-right.svg"
+            alt="Arrow"
+          />
+        </button>
+      </section>
+      <!-- Blog - End -->
+      <!-- Footer - Start -->
+      <section class="footer">
+        <div class="footer__content">
+          <!-- Column 1 & 2: Logo-->
+          <div class="footer__logo-info">
+            <!-- Logo Section -->
+            <div class="footer__logo">
+              <img
+                src="../assets/logos/footer_logo.svg"
+                alt="Logo"
+                class="footer__logo-image"
+              />
+              <span class="footer__logo-text">Ngopi</span>
+            </div>
+          
+            <!-- Company Description -->
+            <div class="footer__description">
+              <p>
+                Discover tranquility at Ngopi, a sanctuary for unwinding, where your
+                evenings are perfected with relaxation and rich flavors.
+              </p>
+            </div>
+          
+            <!-- Contact Information -->
+            <div class="footer__contact">
+              <p>Email: hello@ngopi.com</p>
+              <p>Phone: +01 23456789</p>
+            </div>
+          </div>
+          
+          <!-- Column 3: Quick Links -->
+          <div class="footer__links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Porfolio</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Testimonial</a></li>
+              
+            </ul>
+          </div>
+  
+          <!-- Column 4: Resources -->
+          <div class="footer__resources">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+          </div>
+  
+          <!-- Column 5: Social Media -->
+          <div class="footer__social">
+            <h3 class="footer__social-title">Social Media</h3>
+            <ul class="footer__social-list">
+              <li><a href="#"><img src="../assets/icons/facebook.svg" alt="Facebook" /></a></li>
+              <li><a href="#"><img src="../assets/icons/twitter.svg" alt="Twitter" /></a></li>
+              <li><a href="#"><img src="../assets/icons/instagram.svg" alt="Instagram" /></a></li>
+              <li><a href="#"><img src="../assets/icons/linkedin.svg" alt="LinkedIn" /></a></li>
+              <li><a href="#"><img src="../assets/icons/youtube.svg" alt="YouTube" /></a></li>
+            </ul>
+          </div>
+          
+  
+          <!-- Column 3 Row 7: Subscribe -->
+          <div class="footer__subscribe">
+            <h3>Subscribe</h3>
+            <form>
+              <div class="subscribe__wrapper">
+                <div class="subscribe__input">
+                  <img src="../assets/icons/envelope.svg" alt="Envelope Icon" class="envelope-icon" />
+                  <input type="email" placeholder="name@domain.com" required />
+                </div>
+                <button type="submit" class="subscribe__button">Send</button>
+              </div>
+            </form>
+          </div>
+          
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

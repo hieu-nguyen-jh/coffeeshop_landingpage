@@ -1,0 +1,214 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 80px;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.05)
+    )
+    1;
+}
+
+/* General Styles */
+.products__heading {
+  text-align: center;
+}
+
+.products__heading-title {
+  font-family: var(--font-inter);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  opacity: 56%;
+}
+.products__heading-description {
+  font-family: var(--font-playfair-display);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+/* Navigation Section */
+.products__details {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.products__nav {
+  background-color: var(--neutralcolor-brightgray);
+  padding: 10px;
+  text-align: center;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 25px;
+}
+
+.products__nav-btn {
+  background-color: transparent;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  padding: 10px 20px;
+  width: 180px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--primary-background);
+}
+
+.products__nav-btn:hover:not(.active) {
+  color: var(--neutralcolor-white);
+  background-color: var(--hovercolor-red);
+  border-color: var(--hovercolor-red);
+}
+
+.products__nav-btn.active {
+  background-color: var(--neutralcolor-white);
+}
+
+/* Product List */
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.products__item {
+  width: 280px;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.products__item-image {
+  object-fit: cover;
+  width: 302px;
+  height: 240px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.products__item-info {
+  padding: 15px;
+  text-align: left;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.products__item-title {
+  font-family: var(--font-plus-jakarta-sans);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+.products__item-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.products__item-star {
+  color: #ff9800;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.products__item-average {
+  font-family: var(--font-inter);
+  opacity: 70%;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 2%;
+}
+
+.products__item-reviews {
+  font-family: var(--font-inter);
+  opacity: 72%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+.products__item-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  font-family: var(--font-inter);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  opacity: 75%;
+}
+
+.products__item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.products__item-price {
+  font-family: var(--font-inter);
+  opacity: 70%;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 2%;
+}
+
+.products__item-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--brandcolor-browncoffee);
+  color: var(--neutralcolor-white);
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 14px;
+  font-weight: bold;
+
+  width: 80px;
+  height: 32px;
+  border-radius: 8px;
+}
+
+/* Navigation Dots */
+.products__navdots {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.products__navdot-item {
+  width: 8px;
+  height: 8px;
+  background-color: var(--neutralcolor-brightgray);
+  border-radius: 50%;
+  margin: 0 4px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.products__navdot-item.active,
+.products__navdot-item:hover {
+  background-color: var(--brandcolor-browncoffee);
+}
