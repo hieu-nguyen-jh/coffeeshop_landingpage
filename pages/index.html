@@ -19,47 +19,74 @@
     <link rel="stylesheet" href="../styles/testimonial.css" />
     <link rel="stylesheet" href="../styles/blog.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/tooltip.css" />
+    <link rel="stylesheet" href="../styles/dropdownmenu.css" />
   </head>
   <body>
     <div class="container">
       <!-- Header - Start-->
+
       <header class="header">
         <!-- Logo -->
         <figure class="header__logo">
-          <img class="header__logo-img" src="../assets/logos/header_logo.svg" alt="Logo" />
+          <img
+            class="header__logo-img"
+            src="../assets/logos/header_logo.svg"
+            alt="Logo"
+          />
         </figure>
-      
-        <div class="header__options"> 
-        <!-- Burger Menu -->
-        <div class="header__burger">
-          <input type="checkbox" id="menu-toggle" class="header__menu-checkbox" />
-          <label for="menu-toggle" class="header__burger-menu">
-            <span class="header__burger-line"></span>
-            <span class="header__burger-line"></span>
-            <span class="header__burger-line"></span>
-          </label>
-          <!-- Navigation Menu -->
-          <nav class="header__nav">
-            <a class="header__nav-item" href="#products">Products</a>
-            <a class="header__nav-item" href="#aboutus">About us</a>
-            <a class="header__nav-item" href="#testimonial">Testimonial</a>
-            <a class="header__nav-item" href="#contact">Contact</a>
-          </nav>
+
+        <div class="header__options">
+          <!-- Burger Menu -->
+          <div class="header__burger">
+            <input
+              type="checkbox"
+              id="menu-toggle"
+              class="header__menu-checkbox"
+            />
+            <label for="menu-toggle" class="header__burger-menu">
+              <span class="header__burger-line"></span>
+              <span class="header__burger-line"></span>
+              <span class="header__burger-line"></span>
+            </label>
+            <!-- Navigation Menu -->
+            <nav class="header__nav">
+              <a class="header__nav-item" href="#products">Products</a>
+              <a class="header__nav-item" href="#aboutus">About us</a>
+              <a class="header__nav-item" href="#contact">Contact</a>
+              <div class="header__nav-dropdown">
+                <a class="header__nav-item header__nav-dropdown-toggle" href="">More</a>
+                <ul class="header__nav-dropdown-menu">
+                  <li><a href="#blog">Blog</a></li>
+                  <li><a href="#careers">Careers</a></li>
+                  <li><a href="#faq">FAQ</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+          <!-- Tools -->
+          <section class="header__tools">
+            <button class="header__tool-btn header__tool-btn--search tooltip" data-tooltip="Click to search">
+              <img
+                class="header__tool-icon"
+                src="../assets/icons/search.svg"
+                alt="Search"
+              />
+            </button>
+            <button class="header__tool-btn header__tool-btn--cart tooltip" data-tooltip="Click to go to cart">
+              <img
+                class="header__tool-icon"
+                src="../assets/icons/cart.svg"
+                alt="Cart"
+              />
+            </button>
+          </section>
         </div>
-      
-        <!-- Tools -->
-        <section class="header__tools">
-          <button class="header__tool-btn header__tool-btn--search">
-            <img class="header__tool-icon" src="../assets/icons/search.svg" alt="Search" />
-          </button>
-          <button class="header__tool-btn header__tool-btn--cart">
-            <img class="header__tool-icon" src="../assets/icons/cart.svg" alt="Cart" />
-          </button>
-        </section>
-      </div>
       </header>
+    
       
-      
+
       <!-- Header - End -->
 
       <!-- Intro - Start -->
@@ -73,8 +100,8 @@
             where your evenings are perfected with relaxation and rich flavors.
           </p>
           <p class="intro__description--nowrap">
-            Discover tranquility at Ngopi, a sanctuary for unwinding,
-            where your evenings are perfected with relaxation and rich flavors.
+            Discover tranquility at Ngopi, a sanctuary for unwinding, where your
+            evenings are perfected with relaxation and rich flavors.
           </p>
           <a href="#products" class="intro__button">
             <div class="intro__button-text">EXPLORE PRODUCT</div>
@@ -138,9 +165,9 @@
       <!-- Products - Start -->
       <section class="products" id="products">
         <!-- Header Section -->
-        <div class="products__heading">
-          <h2 class="products__heading-title">Our Products</h2>
-          <p class="products__heading-description">
+        <div class="heading__section">
+          <h2 class="heading__section-title">Our Products</h2>
+          <p class="heading__section-description">
             From Top Quality Materials
           </p>
         </div>
@@ -165,7 +192,9 @@
               <div class="products__item-info">
                 <h3 class="products__item-title">Chocolate Latte</h3>
                 <div class="products__item-rating">
-                  <span class="products__item-star">★</span>
+                  <span class="products__item-star"
+                    ><img src="../assets/icons/star-yellow.svg"
+                  /></span>
                   <span class="products__item-average">4.9</span>
                   <span class="products__item-reviews">(360 reviews)</span>
                 </div>
@@ -177,7 +206,7 @@
                 </p>
                 <div class="products__item-footer">
                   <p class="products__item-price">$2.9</p>
-                  <button class="products__item-button">
+                  <button class="products__item-button tooltip" data-tooltip="Click to go to add">
                     <div class="products__item-button-text">
                       <img src="../assets/icons/plus.svg" />
                     </div>
@@ -196,7 +225,9 @@
               <div class="products__item-info">
                 <h3 class="products__item-title">Mocha Latte</h3>
                 <div class="products__item-rating">
-                  <span class="products__item-star">★</span>
+                  <span class="products__item-star"
+                    ><img src="../assets/icons/star-yellow.svg"
+                  /></span>
                   <span class="products__item-average">4.9</span>
                   <span class="products__item-reviews">(360 reviews)</span>
                 </div>
@@ -208,7 +239,7 @@
                 </p>
                 <div class="products__item-footer">
                   <p class="products__item-price">$2.9</p>
-                  <button class="products__item-button">
+                  <button class="products__item-button tooltip" data-tooltip="Click to go to add">
                     <div class="products__item-button-text">
                       <img src="../assets/icons/plus.svg" />
                     </div>
@@ -226,7 +257,9 @@
               <div class="products__item-info">
                 <h3 class="products__item-title">Coffee Latte</h3>
                 <div class="products__item-rating">
-                  <span class="products__item-star">★</span>
+                  <span class="products__item-star"
+                    ><img src="../assets/icons/star-yellow.svg"
+                  /></span>
                   <span class="products__item-average">4.9</span>
                   <span class="products__item-reviews">(360 reviews)</span>
                 </div>
@@ -238,7 +271,7 @@
                 </p>
                 <div class="products__item-footer">
                   <p class="products__item-price">$2.9</p>
-                  <button class="products__item-button">
+                  <button class="products__item-button tooltip" data-tooltip="Click to go to add">
                     <div class="products__item-button-text">
                       <img src="../assets/icons/plus.svg" />
                     </div>
@@ -256,7 +289,9 @@
               <div class="products__item-info">
                 <h3 class="products__item-title">Hazelnut Latte</h3>
                 <div class="products__item-rating">
-                  <span class="products__item-star">★</span>
+                  <span class="products__item-star">
+                    <img src="../assets/icons/star-yellow.svg" />
+                  </span>
                   <span class="products__item-average">4.9</span>
                   <span class="products__item-reviews">(360 reviews)</span>
                 </div>
@@ -268,7 +303,7 @@
                 </p>
                 <div class="products__item-footer">
                   <p class="products__item-price">$2.9</p>
-                  <button class="products__item-button">
+                  <button class="products__item-button tooltip" data-tooltip="Click to go to add">
                     <div class="products__item-button-text">
                       <img src="../assets/icons/plus.svg" />
                     </div>
@@ -292,9 +327,9 @@
       <!-- About Us -  Start -->
       <section class="aboutus" id="aboutus">
         <!-- Header Section -->
-        <div class="products__heading">
-          <h2 class="products__heading-title">About us</h2>
-          <p class="products__heading-description">Why we are the best</p>
+        <div class="heading__section">
+          <h2 class="heading__section-title">About us</h2>
+          <p class="heading__section-description">Why we are the best</p>
         </div>
 
         <!-- About Us Content -->
@@ -348,9 +383,9 @@
       <!-- Testimonial - Start -->
       <section class="testimonial" id="testimonial">
         <!-- Header Section -->
-        <div class="products__heading">
-          <h2 class="products__heading-title">Testimonial</h2>
-          <p class="products__heading-description">What our buyers say</p>
+        <div class="heading__section">
+          <h2 class="heading__section-title">Testimonial</h2>
+          <p class="heading__section-description">What our buyers say</p>
         </div>
 
         <!-- Testimonials Content -->
@@ -364,7 +399,13 @@
               />
               <div class="testimonial__item-text">
                 <p class="testimonial__item-name">Michael Wong</p>
-                <div class="testimonial__item-rating">★★★★☆</div>
+                <div class="testimonial__item-rating">
+                  <img src="../assets/icons/star-yellow.svg" />
+                  <img src="../assets/icons/star-yellow.svg" />
+                  <img src="../assets/icons/star-yellow.svg" />
+                  <img src="../assets/icons/star-yellow.svg" />
+                  <img src="../assets/icons/star-yellow.svg" />
+                </div>
               </div>
             </div>
             <p class="testimonial__item-description">
@@ -384,7 +425,13 @@
               />
               <div class="testimonial__item-text">
                 <p class="testimonial__item-name">Avril Song</p>
-                <div class="testimonial__item-rating">★★★★☆</div>
+                <div class="testimonial__item-rating">
+                  <img src="../assets/icons/star-yellow.svg" />
+                  <img src="../assets/icons/star-yellow.svg" />
+                  <img src="../assets/icons/star-yellow.svg" />
+                  <img src="../assets/icons/star-yellow.svg" />
+                  <img src="../assets/icons/star-gray.svg" />
+                </div>
               </div>
             </div>
             <p class="testimonial__item-description">
@@ -404,7 +451,13 @@
               />
               <div class="testimonial__item-text">
                 <p class="testimonial__item-name">Jeanne Wood</p>
-                <div class="testimonial__item-rating">★★★★☆</div>
+                <div class="testimonial__item-rating">
+                  <img src="../assets/icons/star-yellow.svg" />
+                  <img src="../assets/icons/star-yellow.svg" />
+                  <img src="../assets/icons/star-yellow.svg" />
+                  <img src="../assets/icons/star-yellow.svg" />
+                  <img src="../assets/icons/star-gray.svg" />
+                </div>
               </div>
             </div>
             <p class="testimonial__item-description">
@@ -428,9 +481,9 @@
       <!-- Blog - Start -->
       <section class="blog">
         <!-- Header Section -->
-        <div class="products__heading">
-          <h2 class="products__heading-title">Blog</h2>
-          <p class="products__heading-description">Read our articles</p>
+        <div class="heading__section">
+          <h2 class="heading__section-title">Blog</h2>
+          <p class="heading__section-description">Read our articles</p>
         </div>
 
         <!-- Blog Content -->
@@ -567,86 +620,107 @@
       </section>
       <!-- Blog - End -->
       <!-- Footer - Start -->
-      <section class="footer" id="contact">
-        <div class="footer__content">
-          <!-- Column 1 & 2: Logo-->
-          <div class="footer__logo-info">
-            <!-- Logo Section -->
-            <div class="footer__logo">
-              <img
-                src="../assets/logos/footer_logo.svg"
-                alt="Logo"
-                class="footer__logo-image"
-              />
-              <span class="footer__logo-text">Ngopi</span>
-            </div>
-          
-            <!-- Company Description -->
-            <div class="footer__description">
-              <p>
-                Discover tranquility at Ngopi, a sanctuary for unwinding, where your
-                evenings are perfected with relaxation and rich flavors.
-              </p>
-            </div>
-          
-            <!-- Contact Information -->
-            <div class="footer__contact">
-              <p>Email: hello@ngopi.com</p>
-              <p>Phone: +01 23456789</p>
-            </div>
-          </div>
-          
-          <!-- Column 3: Quick Links -->
-          <div class="footer__links">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Porfolio</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Testimonial</a></li>
-              
-            </ul>
-          </div>
-  
-          <!-- Column 4: Resources -->
-          <div class="footer__resources">
-            <h3>Resources</h3>
-            <ul>
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms and Conditions</a></li>
-            </ul>
-          </div>
-  
-          <!-- Column 5: Social Media -->
-          <div class="footer__social">
-            <h3 class="footer__social-title">Social Media</h3>
-            <ul class="footer__social-list">
-              <li><a href="#"><img src="../assets/icons/facebook.svg" alt="Facebook" /></a></li>
-              <li><a href="#"><img src="../assets/icons/twitter.svg" alt="Twitter" /></a></li>
-              <li><a href="#"><img src="../assets/icons/instagram.svg" alt="Instagram" /></a></li>
-              <li><a href="#"><img src="../assets/icons/linkedin.svg" alt="LinkedIn" /></a></li>
-              <li><a href="#"><img src="../assets/icons/youtube.svg" alt="YouTube" /></a></li>
-            </ul>
-          </div>
-          
-  
-          <!-- Column 3 Row 7: Subscribe -->
-          <div class="footer__subscribe">
-            <h3>Subscribe</h3>
-            <form>
-              <div class="subscribe__wrapper">
-                <div class="subscribe__input">
-                  <img src="../assets/icons/envelope.svg" alt="Envelope Icon" class="envelope-icon" />
-                  <input type="email" placeholder="name@domain.com" required />
-                </div>
-                <button type="submit" class="subscribe__button">Send</button>
-              </div>
-            </form>
-          </div>
-          
-        </div>
-      </section>
     </div>
+    <section class="footer" id="contact">
+      <div class="footer__content">
+        <!-- Column 1 & 2: Logo-->
+        <div class="footer__logo-info">
+          <!-- Logo Section -->
+          <div class="footer__logo">
+            <img
+              src="../assets/logos/footer_logo.svg"
+              alt="Logo"
+              class="footer__logo-image"
+            />
+            <span class="footer__logo-text">Ngopi</span>
+          </div>
+
+          <!-- Company Description -->
+          <div class="footer__description">
+            <p>
+              Discover tranquility at Ngopi, a sanctuary for unwinding, where
+              your evenings are perfected with relaxation and rich flavors.
+            </p>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="footer__contact">
+            <p>Email: hello@ngopi.com</p>
+            <p>Phone: +01 23456789</p>
+          </div>
+        </div>
+
+        <!-- Column 3: Quick Links -->
+        <div class="footer__links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Porfolio</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Testimonial</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Resources -->
+        <div class="footer__resources">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Social Media -->
+        <div class="footer__social">
+          <h3 class="footer__social-title">Social Media</h3>
+          <ul class="footer__social-list">
+            <li>
+              <a href="#"
+                ><img src="../assets/icons/facebook.svg" alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../assets/icons/twitter.svg" alt="Twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../assets/icons/instagram.svg" alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../assets/icons/linkedin.svg" alt="LinkedIn"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../assets/icons/youtube.svg" alt="YouTube"
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3 Row 7: Subscribe -->
+        <div class="footer__subscribe">
+          <h3>Subscribe</h3>
+          <form>
+            <div class="subscribe__wrapper">
+              <div class="subscribe__input">
+                <img
+                  src="../assets/icons/envelope.svg"
+                  alt="Envelope Icon"
+                  class="envelope-icon"
+                />
+                <input type="email" placeholder="name@domain.com" required />
+              </div>
+              <button type="submit" class="subscribe__button">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

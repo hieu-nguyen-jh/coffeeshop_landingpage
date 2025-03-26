@@ -29,6 +29,7 @@
 }
 
 .testimonial__item-image {
+    
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -53,6 +54,7 @@
 .testimonial__item-rating {
   font-size: 14px;
   color: var(--starcolor-yellow);
+  margin-top: 8px;
 }
 
 .testimonial__item-description {
@@ -76,15 +78,15 @@
     }
   
     .testimonial__item {
-      padding: 16px;
+      padding: 20px;
     }
   
     .testimonial__item-name {
-      font-size: 18px;
+      font-size: 22px;
     }
   
     .testimonial__item-description {
-      font-size: 18px;
+      font-size: 22px;
     }
   }
   

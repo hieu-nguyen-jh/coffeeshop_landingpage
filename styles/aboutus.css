@@ -119,7 +119,7 @@ margin-top: 15%;
     border-bottom-right-radius: 120px;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .aboutus__details{
         padding-bottom: 0px;
     }
@@ -137,13 +137,14 @@ margin-top: 15%;
     }
   
     .aboutus__images {
-      
+      width: 50%;
+      margin: auto;
       align-items: center;
       gap: 16px;
     }
   
     .aboutus__image {
-      width: 90%;
+      width: 1000%;
       height: auto;
     }
     .intro__button{

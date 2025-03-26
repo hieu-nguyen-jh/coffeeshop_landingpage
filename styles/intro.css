@@ -67,6 +67,12 @@
   height: 2.125rem;
 }
 
+.intro__button:hover, .subscribe__button:hover, .products__item-button:hover {
+  background-color: var(--brandcolor-darkbrown); 
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
 .intro__images {
   display: flex;
   flex-wrap: nowrap;
@@ -195,7 +201,11 @@
  
 
 }
-
+@media (max-width: 1439px){
+  .intro__images > img {
+    max-width: 8.375rem;
+  }
+}
 @media (max-width: 768px) {
   .intro {
   
@@ -210,13 +220,6 @@
       1;
   }
 
-  .intro__slogan {
-    font-size: 1.5rem;
-  }
-
-  .intro__description {
-    font-size: 0.875rem;
-  }
 
   .intro__button {
     width: 100%;
@@ -230,7 +233,7 @@
   }
 
   .intro__images > img {
-    max-width: 9.375rem;
+    max-width: 7rem;
     height: 12.5rem;
   }
   .intro__images > img {
