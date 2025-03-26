@@ -3,7 +3,7 @@
   color: var(--neutralcolor-white);
   padding: 5rem;
   padding-bottom: 0px;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: auto;
  
 }
@@ -55,8 +55,9 @@
   list-style: none;
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   gap: 16px;
+  margin-top: 10px;
 }
 .footer__links ul,
 .footer__resources ul {
