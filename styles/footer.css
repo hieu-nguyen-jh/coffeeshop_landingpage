@@ -1,7 +1,7 @@
 .footer {
   background-color: var(--primary-background);
   color: var(--neutralcolor-white);
-  padding: 80px;
+  padding: 5rem;
   padding-bottom: 0px;
   width: 110%;
   margin-left: -5%;
@@ -109,7 +109,7 @@
 .subscribe__input img.envelope-icon {
   width: 24px;
   height: 24px;
-  color: #6c757d;
+  color: var(--envelopeicon-gray);
 }
 
 .subscribe__input input {
@@ -117,17 +117,17 @@
   border: none;
   background: none;
   outline: none;
-  font-size: 16px;
-  color: #333;
+  font-size: 1rem;
+  color: var(--inputcolor-gray);
 }
 
 .subscribe__button {
   background-color: var(--brandcolor-browncoffee);
   color: var(--neutralcolor-white);
   border: none;
-  border-radius: 16px;
+  border-radius: 1rem;
   height: 62px;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 
@@ -147,7 +147,12 @@
   letter-spacing: 0%;
 }
 
-
+@media (max-width: 1024px){
+    .footer {
+        padding: 5rem;
+        padding-bottom: 0;
+      }
+}
 @media (max-width: 768px) {
   .footer {
     padding: 24px;

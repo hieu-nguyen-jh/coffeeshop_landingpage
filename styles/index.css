@@ -46,6 +46,8 @@ p {
   --starcolor-yellow: #ffb31f;
   --hovercolor-red: #ff6347;
   --text-white: white;
+  --envelopeicon-gray: #6c757d;
+  --inputcolor-gray: #333;
   --font-playfair-display: "Playfair Display", serif;
   --font-playfair-display-sc: "Playfair Display SC", serif;
   --font-plus-jakarta-sans: "Plus Jakarta Sans", serif;
@@ -72,5 +74,6 @@ html {
     gap: 40px;
     width: 100%;
     padding: 30px;
+    padding-bottom: 0;
   }
 }
